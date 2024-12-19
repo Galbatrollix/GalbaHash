@@ -23,7 +23,7 @@ C_FLAGS += -g0 -O3
 endif
  
 
-C_SRC_FILES = $(wildcard *.c)
+C_SRC_FILES = $(wildcard src/*.c)
 C_OBJ_FILES = $(patsubst %.c, %.o, $(C_SRC_FILES))
 
 # adding Makefile itself to the rule prerequisites will make sure everything is recompiled if makefile content gets changed
